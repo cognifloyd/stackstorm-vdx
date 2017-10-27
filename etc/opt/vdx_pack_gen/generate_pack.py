@@ -90,7 +90,7 @@ def generate_pack(info):
             action_name = "%s_%s" % (str.lower(module), method)
             action_path = "%s.%s" % (str.lower(module), method)
             code = """from pynos import device
-from st2actions.runners.pythonrunner import Action
+from st2common.runners.base_action import Action
 
 
 class %s(Action):
