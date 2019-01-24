@@ -13,5 +13,6 @@ class interface_del_ip(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.del_ip(**kwargs)
         return 0

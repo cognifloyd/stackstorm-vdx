@@ -13,5 +13,6 @@ class interface_channel_group(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.channel_group(**kwargs)
         return 0

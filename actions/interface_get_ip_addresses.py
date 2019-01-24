@@ -13,5 +13,6 @@ class interface_get_ip_addresses(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.get_ip_addresses(**kwargs)
         return 0

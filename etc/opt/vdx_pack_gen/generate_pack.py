@@ -104,6 +104,7 @@ class %s(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.%s(**kwargs)
         return 0\n""" % (action_name, action_path)
             action_yaml = {

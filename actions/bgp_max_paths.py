@@ -13,5 +13,6 @@ class bgp_max_paths(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.bgp.max_paths(**kwargs)
         return 0

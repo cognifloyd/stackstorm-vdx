@@ -13,5 +13,6 @@ class interface_vrrp_priority(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.vrrp_priority(**kwargs)
         return 0

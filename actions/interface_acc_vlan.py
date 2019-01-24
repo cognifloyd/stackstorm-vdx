@@ -13,5 +13,6 @@ class interface_acc_vlan(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.acc_vlan(**kwargs)
         return 0

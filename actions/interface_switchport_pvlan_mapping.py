@@ -13,5 +13,6 @@ class interface_switchport_pvlan_mapping(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.switchport_pvlan_mapping(**kwargs)
         return 0

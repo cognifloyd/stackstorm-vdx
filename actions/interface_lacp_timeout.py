@@ -13,6 +13,7 @@ class interface_lacp_timeout(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             kwargs['timeout'] = kwargs.pop('lacp_timeout')
             dev.interface.lacp_timeout(**kwargs)
         return 0

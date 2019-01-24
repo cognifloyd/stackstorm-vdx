@@ -13,5 +13,6 @@ class interface_enable_switchport(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.enable_switchport(**kwargs)
         return 0

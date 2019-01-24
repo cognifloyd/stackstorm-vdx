@@ -13,5 +13,6 @@ class interface_trunk_allowed_vlan(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.trunk_allowed_vlan(**kwargs)
         return 0

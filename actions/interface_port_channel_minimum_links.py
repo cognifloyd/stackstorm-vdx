@@ -13,5 +13,6 @@ class interface_port_channel_minimum_links(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.port_channel_minimum_links(**kwargs)
         return 0

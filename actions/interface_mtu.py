@@ -13,5 +13,6 @@ class interface_mtu(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.mtu(**kwargs)
         return 0

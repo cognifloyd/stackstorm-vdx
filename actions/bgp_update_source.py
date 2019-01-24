@@ -13,5 +13,6 @@ class bgp_update_source(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.bgp.update_source(**kwargs)
         return 0

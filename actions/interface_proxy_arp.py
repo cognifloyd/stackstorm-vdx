@@ -13,5 +13,6 @@ class interface_proxy_arp(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.proxy_arp(**kwargs)
         return 0

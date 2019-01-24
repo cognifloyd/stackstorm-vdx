@@ -13,5 +13,6 @@ class interface_transport_service(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.transport_service(**kwargs)
         return 0

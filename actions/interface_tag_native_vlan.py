@@ -13,5 +13,6 @@ class interface_tag_native_vlan(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.tag_native_vlan(**kwargs)
         return 0

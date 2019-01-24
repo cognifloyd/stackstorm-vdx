@@ -13,5 +13,6 @@ class interface_trunk_mode(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.trunk_mode(**kwargs)
         return 0

@@ -13,5 +13,6 @@ class bgp_graceful_restart(Action):
             test=test,
             callback=callback
         ) as dev:
+             # pylint: disable=no-member
             dev.bgp.graceful_restart(**kwargs)
         return 0

@@ -13,5 +13,6 @@ class interface_private_vlan_mode(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.private_vlan_mode(**kwargs)
         return 0
