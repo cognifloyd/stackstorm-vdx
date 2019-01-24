@@ -13,5 +13,6 @@ class bgp_neighbor(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.bgp.neighbor(**kwargs)
         return 0

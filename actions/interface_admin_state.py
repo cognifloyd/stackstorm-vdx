@@ -13,5 +13,6 @@ class interface_admin_state(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.admin_state(**kwargs)
         return 0

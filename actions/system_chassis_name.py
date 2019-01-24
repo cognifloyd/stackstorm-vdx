@@ -13,5 +13,6 @@ class system_chassis_name(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.system.chassis_name(**kwargs)
         return 0

@@ -13,5 +13,6 @@ class bgp_remove_bgp(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.bgp.remove_bgp(**kwargs)
         return 0

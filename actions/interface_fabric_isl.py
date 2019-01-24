@@ -13,5 +13,6 @@ class interface_fabric_isl(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.fabric_isl(**kwargs)
         return 0

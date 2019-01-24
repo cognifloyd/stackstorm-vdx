@@ -13,5 +13,6 @@ class system_host_name(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.system.host_name(**kwargs)
         return 0

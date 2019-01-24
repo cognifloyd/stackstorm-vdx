@@ -13,5 +13,6 @@ class services_vrrp(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.services.vrrp(**kwargs)
         return 0

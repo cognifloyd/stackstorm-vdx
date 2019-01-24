@@ -13,5 +13,6 @@ class interface_vlan_pvlan_association_add(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.vlan_pvlan_association_add(**kwargs)
         return 0

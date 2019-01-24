@@ -13,5 +13,6 @@ class interface_fabric_trunk(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.fabric_trunk(**kwargs)
         return 0

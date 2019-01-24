@@ -13,5 +13,6 @@ class interface_v6_nd_suppress_ra(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.v6_nd_suppress_ra(**kwargs)
         return 0

@@ -13,5 +13,6 @@ class interface_description(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.description(**kwargs)
         return 0

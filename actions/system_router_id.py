@@ -13,5 +13,6 @@ class system_router_id(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.system.router_id(**kwargs)
         return 0

@@ -13,5 +13,6 @@ class interface_vrrp_vip(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.vrrp_vip(**kwargs)
         return 0

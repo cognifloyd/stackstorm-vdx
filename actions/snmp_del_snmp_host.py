@@ -13,5 +13,6 @@ class snmp_del_snmp_host(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.snmp.del_snmp_host(**kwargs)
         return 0

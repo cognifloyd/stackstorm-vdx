@@ -13,5 +13,6 @@ class interface_spanning_tree_state(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.spanning_tree_state(**kwargs)
         return 0

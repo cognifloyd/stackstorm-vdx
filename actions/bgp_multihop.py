@@ -13,5 +13,6 @@ class bgp_multihop(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.bgp.multihop(**kwargs)
         return 0

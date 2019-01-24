@@ -13,5 +13,6 @@ class bgp_local_asn(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.bgp.local_asn(**kwargs)
         return 0

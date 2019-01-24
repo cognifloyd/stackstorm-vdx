@@ -13,5 +13,6 @@ class interface_remove_port_channel(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.remove_port_channel(**kwargs)
         return 0

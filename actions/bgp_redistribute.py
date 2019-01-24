@@ -13,5 +13,6 @@ class bgp_redistribute(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.bgp.redistribute(**kwargs)
         return 0

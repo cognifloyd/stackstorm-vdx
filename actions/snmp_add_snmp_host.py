@@ -13,5 +13,6 @@ class snmp_add_snmp_host(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.snmp.add_snmp_host(**kwargs)
         return 0

@@ -13,5 +13,6 @@ class interface_ip_mtu(Action):
             test=test,
             callback=callback
         ) as dev:
+            # pylint: disable=no-member
             dev.interface.ip_mtu(**kwargs)
         return 0
