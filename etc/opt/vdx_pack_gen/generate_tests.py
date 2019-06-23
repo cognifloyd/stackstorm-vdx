@@ -51,8 +51,8 @@ def request_user_bool(prompt):
     """Request a yes or no from the user and return the result as a bool
     """
     user_input = raw_input(prompt)
-    if user_input is not "y" and user_input is not "n":
-        print 'Incorrect entry. Pleasae use "y" or "n".'
+    if user_input != "y" and user_input != "n":
+        print 'Incorrect entry. Please use "y" or "n".'
         return request_user_bool(prompt)
     else:
         return bool(user_input == "y")
